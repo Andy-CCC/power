@@ -11,12 +11,13 @@ def print_hi(name):
     print('你好1')
 
 
-
 # 按装订区域中的绿色按钮以运行脚本。
 if __name__ == '__main__':
     print_hi('PyCharm')
     print(1)
     print(1)
     print('大家1都好')
+    print('大家1都好')
+    print('大家3都好')
 
 # 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
