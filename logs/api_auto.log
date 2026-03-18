@@ -1,0 +1,140 @@
+2026-03-18 10:26:16.630 | INFO     | core.excel_utils:get_cases:29 - 成功读取2条用例
+2026-03-18 10:26:16.634 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:26:16.636 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:26:16.636 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/api/login
+2026-03-18 10:26:16.636 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'username': 'admin', 'password': '123'}
+2026-03-18 10:26:17.445 | INFO     | core.http_client:send_request:46 - 【响应】状态码：404 | 内容：Not Found
+2026-03-18 10:26:17.678 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：获取用户信息 ==========
+2026-03-18 10:26:17.678 | INFO     | core.http_client:send_request:33 - 【请求】方法：GET | URL：https://fas-api.flextv9.com/api/user/info
+2026-03-18 10:26:17.679 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={'uid': 1001} | json={}
+2026-03-18 10:26:17.861 | INFO     | core.http_client:send_request:46 - 【响应】状态码：404 | 内容：Not Found
+2026-03-18 10:26:17.868 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 10:28:28.603 | INFO     | core.excel_utils:get_cases:29 - 成功读取2条用例
+2026-03-18 10:28:28.607 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:28:28.609 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:28:28.609 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/api/login
+2026-03-18 10:28:28.609 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'username': 'admin', 'password': '123'}
+2026-03-18 10:28:29.327 | INFO     | core.http_client:send_request:46 - 【响应】状态码：404 | 内容：Not Found
+2026-03-18 10:28:29.566 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：获取用户信息 ==========
+2026-03-18 10:28:29.566 | INFO     | core.http_client:send_request:33 - 【请求】方法：GET | URL：https://fas-api.flextv9.com/api/user/info
+2026-03-18 10:28:29.566 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={'uid': 1001} | json={}
+2026-03-18 10:28:29.745 | INFO     | core.http_client:send_request:46 - 【响应】状态码：404 | 内容：Not Found
+2026-03-18 10:28:29.753 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 10:31:22.052 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 10:31:22.055 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:31:22.057 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:31:22.057 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/api/login
+2026-03-18 10:31:22.057 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 10:31:22.774 | INFO     | core.http_client:send_request:46 - 【响应】状态码：404 | 内容：Not Found
+2026-03-18 10:31:22.994 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 10:33:49.961 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 10:33:49.964 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:33:49.965 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:33:49.966 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 10:33:49.966 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 10:33:50.714 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiT1I4cFdHaW8ifQ.qEJGfZvj7C-wvFY1brUNwhBwuULxZBOCVQWUw2rL6ZI","expires":604800},"timestamp":1773801231,"traceID":"d755b986d2ce9d182462fe38a4067b0f"}
+2026-03-18 10:33:50.714 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 10:33:50.714 | ERROR    | core.assert_utils:assert_json_value:23 - JSON字段断言失败：字段断言失败：code预期操作成功，实际0
+2026-03-18 10:33:50.942 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 10:36:37.090 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 10:36:37.094 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:36:37.095 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:36:37.095 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 10:36:37.096 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 10:36:37.913 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiT1JyeEp1QU0ifQ.UsglxNENJ8NcrNZBl1PnR3298VNjS9lea6zItZWnByo","expires":604800},"timestamp":1773801399,"traceID":"f73e2c74f9ce9d184d62fe38b73f154d"}
+2026-03-18 10:36:37.913 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 10:36:37.913 | ERROR    | core.assert_utils:assert_json_value:23 - JSON字段断言失败：字段断言失败：code预期操作成功，实际0
+2026-03-18 10:36:38.142 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 10:40:41.370 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 10:40:41.374 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:40:41.375 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:40:41.375 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 10:40:41.375 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 10:40:42.092 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiYWJEZWtZZXcifQ.lWCbDIs1rmWwpFxdlhZe0HVW7IGjjkbSFBHONMD9n2M","expires":604800},"timestamp":1773801643,"traceID":"aa83264f32cf9d189462fe3873a3c0f7"}
+2026-03-18 10:40:42.093 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 10:40:42.093 | ERROR    | core.assert_utils:assert_json_value:23 - JSON字段断言失败：字段断言失败：code预期操作成功，实际0
+2026-03-18 10:40:42.322 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 10:44:45.716 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 10:44:45.718 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 10:44:45.719 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 10:44:45.719 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 10:44:45.720 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 10:44:46.445 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiQkwxdVVjYm0ifQ.veLmlDABT_k1rjOBjjPAavsnlh7w7wBoiryn74RU27E","expires":604800},"timestamp":1773801887,"traceID":"e3c5cc336bcf9d18d762fe38993cf795"}
+2026-03-18 10:44:46.456 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 10:44:46.456 | ERROR    | core.assert_utils:assert_json_value:23 - JSON字段断言失败：字段断言失败：code预期操作成功，实际0
+2026-03-18 10:44:46.683 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 11:01:42.487 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 11:01:42.490 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:01:42.491 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:01:42.491 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:01:42.491 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:01:43.463 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiUUpXd1B1V2YifQ.Hq_twxx8rmwqIwmFwtHkQB8RYet1j8iv3dt8U4Lctqk","expires":604800},"timestamp":1773802904,"traceID":"d0d48afc57d09d18f263fe380be3cbf4"}
+2026-03-18 11:01:43.474 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:01:43.474 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
+2026-03-18 11:01:43.475 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 11:02:57.090 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 11:02:57.092 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:02:57.093 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:02:57.093 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:02:57.093 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:02:57.812 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiM29rUFZJeGsifQ.G2zY5pFWr806o23MLY6NeZOyoxX9ITZHR69vguszpfo","expires":604800},"timestamp":1773802978,"traceID":"d8c3d84e69d09d180a64fe383ce78d2b"}
+2026-03-18 11:02:57.813 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:02:57.813 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
+2026-03-18 11:02:57.814 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 11:05:56.829 | INFO     | core.excel_utils:get_cases:29 - 成功读取1条用例
+2026-03-18 11:05:56.832 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:05:56.833 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:05:56.833 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:05:56.833 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:05:57.571 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiT2NiS2JUY2oifQ.TBiHFQmAj8ADRijwiUm1tJTFXNwLJcuu5zwHMleBgQ0","expires":604800},"timestamp":1773803158,"traceID":"ac07542993d09d183d64fe3814614069"}
+2026-03-18 11:05:57.571 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:05:57.571 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
+2026-03-18 11:05:57.573 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 11:08:20.349 | INFO     | core.excel_utils:get_cases:29 - 成功读取2条用例
+2026-03-18 11:08:20.353 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:08:20.354 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:08:20.354 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:08:20.354 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:08:21.074 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoicDNnaFI2Q0YifQ.clHmmmepGaMK-63-srVQC05xdUWrboT6GyE74SK1iig","expires":604800},"timestamp":1773803302,"traceID":"e875de92b4d09d186664fe3875bbd116"}
+2026-03-18 11:08:21.075 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:08:21.075 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
+2026-03-18 11:08:21.078 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录失败，验证码错误 ==========
+2026-03-18 11:08:21.078 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:08:21.079 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8881', 'type': 1}
+2026-03-18 11:08:21.274 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":-1,"message":"验证码有误，请重新验证","error":["1. 验证码有误，请重新验证","   1).  flextv-saas-ai-translate-go/internal/logic/admin.(*sSms).VerifyCode","        /app/internal/logic/admin/sms.go:209","   2).  flextv-saas-ai-translate-go/internal/logic/admin.(*sMember).Login","        /app/internal/logic/admin/member.go:225","   3).  flextv-saas-ai-translate-go/internal/controller/admin.(*ControllerMember).Login","        /app/internal/controller/admin/admin_member_memer.go:12","   4).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).AdminAuth","        /app/internal/logic/middleware/admin_auth.go:20","   5).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).Ctx","        /app/internal/logic/middleware/init.go:65","   6).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).ResponseHandler","        /app/internal/logic/middleware/response.go:21","   7).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).OperationLogHandler","        /app/internal/logic/middleware/operation_log.go:13","   8).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).PreFilter","        /app/internal/logic/middleware/pre_filter.go:64","   9).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).Prometheus","        /app/internal/logic/middleware/prometheus.go:50","   10). flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).CORS","        /app/internal/logic/middleware/init.go:71",""],"timestamp":1773803302,"traceID":"dac2419eb4d09d186764fe38cd60e843"}
+2026-03-18 11:08:21.275 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:08:21.275 | INFO     | core.assert_utils:assert_json_value:21 - 字段断言成功：code=-1
+2026-03-18 11:08:21.275 | INFO     | test_runner:test_run_case:47 - ========== 用例登录失败，验证码错误执行成功 ==========
+2026-03-18 11:08:21.277 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 11:09:16.617 | INFO     | core.excel_utils:get_cases:29 - 成功读取2条用例
+2026-03-18 11:09:16.619 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:09:16.620 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:09:16.620 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:09:16.620 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:09:17.374 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiTW1nVzZLdEgifQ.g9O12GhKNwaI_JJ6GLz06iAvka5RvVLXqJX19JUWz1k","expires":604800},"timestamp":1773803358,"traceID":"2f33d2adc1d09d187664fe387705e432"}
+2026-03-18 11:09:17.375 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:09:17.375 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
+2026-03-18 11:09:17.377 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录失败，验证码错误 ==========
+2026-03-18 11:09:17.377 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:09:17.377 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8881', 'type': 1}
+2026-03-18 11:09:17.560 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":-1,"message":"验证码有误，请重新验证","error":["1. 验证码有误，请重新验证","   1).  flextv-saas-ai-translate-go/internal/logic/admin.(*sSms).VerifyCode","        /app/internal/logic/admin/sms.go:209","   2).  flextv-saas-ai-translate-go/internal/logic/admin.(*sMember).Login","        /app/internal/logic/admin/member.go:225","   3).  flextv-saas-ai-translate-go/internal/controller/admin.(*ControllerMember).Login","        /app/internal/controller/admin/admin_member_memer.go:12","   4).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).AdminAuth","        /app/internal/logic/middleware/admin_auth.go:20","   5).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).Ctx","        /app/internal/logic/middleware/init.go:65","   6).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).ResponseHandler","        /app/internal/logic/middleware/response.go:21","   7).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).OperationLogHandler","        /app/internal/logic/middleware/operation_log.go:13","   8).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).PreFilter","        /app/internal/logic/middleware/pre_filter.go:64","   9).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).Prometheus","        /app/internal/logic/middleware/prometheus.go:50","   10). flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).CORS","        /app/internal/logic/middleware/init.go:71",""],"timestamp":1773803358,"traceID":"44ebdcb9c1d09d187764fe3879510959"}
+2026-03-18 11:09:17.561 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:09:17.561 | INFO     | core.assert_utils:assert_json_value:21 - 字段断言成功：code=-1
+2026-03-18 11:09:17.561 | INFO     | test_runner:test_run_case:47 - ========== 用例登录失败，验证码错误执行成功 ==========
+2026-03-18 11:09:17.562 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======
+2026-03-18 11:15:11.748 | INFO     | core.excel_utils:get_cases:29 - 成功读取2条用例
+2026-03-18 11:15:11.751 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:15:11.752 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:15:11.752 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:15:11.752 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:15:12.611 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoiQkprcXpGYTMifQ.mR6ZE6tl4p20lIf5Ip6vLHhNVUM-M2-fl1QSlW95fUg","expires":604800},"timestamp":1773803713,"traceID":"772b696214d19d18d864fe3822bd75b2"}
+2026-03-18 11:15:12.611 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:15:12.611 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
+2026-03-18 11:15:12.616 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录失败，验证码错误 ==========
+2026-03-18 11:15:12.616 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:15:12.616 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8881', 'type': 1}
+2026-03-18 11:15:12.827 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":-1,"message":"验证码有误，请重新验证","error":["1. 验证码有误，请重新验证","   1).  flextv-saas-ai-translate-go/internal/logic/admin.(*sSms).VerifyCode","        /app/internal/logic/admin/sms.go:209","   2).  flextv-saas-ai-translate-go/internal/logic/admin.(*sMember).Login","        /app/internal/logic/admin/member.go:225","   3).  flextv-saas-ai-translate-go/internal/controller/admin.(*ControllerMember).Login","        /app/internal/controller/admin/admin_member_memer.go:12","   4).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).AdminAuth","        /app/internal/logic/middleware/admin_auth.go:20","   5).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).Ctx","        /app/internal/logic/middleware/init.go:65","   6).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).ResponseHandler","        /app/internal/logic/middleware/response.go:21","   7).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).OperationLogHandler","        /app/internal/logic/middleware/operation_log.go:13","   8).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).PreFilter","        /app/internal/logic/middleware/pre_filter.go:64","   9).  flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).Prometheus","        /app/internal/logic/middleware/prometheus.go:50","   10). flextv-saas-ai-translate-go/internal/logic/middleware.(*sMiddleware).CORS","        /app/internal/logic/middleware/init.go:71",""],"timestamp":1773803713,"traceID":"c3663d7014d19d18d964fe3869bcb61c"}
+2026-03-18 11:15:12.828 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:15:12.828 | INFO     | core.assert_utils:assert_json_value:21 - 字段断言成功：code=-1
+2026-03-18 11:15:12.828 | INFO     | test_runner:test_run_case:47 - ========== 用例登录失败，验证码错误执行成功 ==========
+2026-03-18 11:15:12.829 | INFO     | conftest:session_fixture:9 - ======= 接口自动化测试结束 =======

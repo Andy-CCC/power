@@ -1,0 +1,7 @@
+2026-03-18 11:08:20.353 | INFO     | conftest:session_fixture:7 - ======= 接口自动化测试开始 =======
+2026-03-18 11:08:20.354 | INFO     | test_runner:test_run_case:29 - ========== 执行用例：登录成功 ==========
+2026-03-18 11:08:20.354 | INFO     | core.http_client:send_request:33 - 【请求】方法：POST | URL：https://fas-api.flextv9.com/admin/member/login
+2026-03-18 11:08:20.354 | INFO     | core.http_client:send_request:34 - 【请求】参数：params={} | json={'tel': '18218410011', 'captcha': '8888', 'type': 1}
+2026-03-18 11:08:21.074 | INFO     | core.http_client:send_request:46 - 【响应】状态码：200 | 内容：{"code":0,"message":"操作成功","data":{"id":162,"pid":0,"type":1,"email":"419017458@qq.com","nickname":"10011用户","username":"","headimg":"https://mega-ai-img-public-test.oss-cn-guangzhou.aliyuncs.com/resource/head/person_1.png","tel":"18218410011","token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTYyLCJwaWQiOjAsInR5cGUiOjEsImVtYWlsIjoiNDE5MDE3NDU4QHFxLmNvbSIsIm5pY2tuYW1lIjoiMTAwMTHnlKjmiLciLCJ1c2VybmFtZSI6IiIsImhlYWRpbWciOiJodHRwczovL21lZ2EtYWktaW1nLXB1YmxpYy10ZXN0Lm9zcy1jbi1ndWFuZ3pob3UuYWxpeXVuY3MuY29tL3Jlc291cmNlL2hlYWQvcGVyc29uXzEucG5nIiwidGVsIjoiIiwibG9naW5fYXQiOm51bGwsInN0YXR1cyI6MCwiaXNfY29tcGxldGVfaW5mb3JtYXRpb24iOjAsInJhbmRfbnVtIjoicDNnaFI2Q0YifQ.clHmmmepGaMK-63-srVQC05xdUWrboT6GyE74SK1iig","expires":604800},"timestamp":1773803302,"traceID":"e875de92b4d09d186664fe3875bbd116"}
+2026-03-18 11:08:21.075 | INFO     | core.assert_utils:assert_code:12 - 状态码断言成功：200 == 200
+2026-03-18 11:08:21.075 | INFO     | test_runner:test_run_case:47 - ========== 用例登录成功执行成功 ==========
