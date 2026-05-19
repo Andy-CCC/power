@@ -1,16 +1,16 @@
 import os
 from loguru import logger
-from config.env_config import BASE_DIR
-#日志封装，无需改
-# 日志保存路径
+from config.env_config import BASE_DIR, LOG_LEVEL
+
+# 日志路径
 LOG_PATH = os.path.join(BASE_DIR, "logs", "api_auto.log")
-# 日志配置：按10MB分割、保留7天、UTF-8编码
+# 日志配置
 logger.add(
     LOG_PATH,
-    rotation="10 MB",
-    retention="7 days",
+    rotation="10 MB",       # 按10MB分割日志
+    retention="7 days",     # 保留7天
     encoding="utf-8",
-    enqueue=True,
-    level="INFO"
+    level=LOG_LEVEL,
+    enqueue=True            # 异步日志，不阻塞
 )
 log = logger
