@@ -1,7 +1,7 @@
 # 这是一个简单的待办事项管理程序，用来复习列表和循环
-
 # 1. 创建一个空列表，用来存放待办事项
 todo_list = []
+
 
 # 2. 打印功能菜单
 def show_menu():
@@ -48,6 +48,7 @@ def delete_todo():
             print("❌ 编号无效")
     except ValueError:
         print("❌ 请输入正确的数字")
+
 
 # 6. 主程序（复习 while 循环）
 while True:
