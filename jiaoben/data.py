@@ -165,28 +165,64 @@ def list_requiremen1():
     print(f'----- 已发货：{status_count["已发货"]} 单')
     print(f'----- 已取消：{status_count["已取消"]} 单')
 
-    #需求2：找出金额大于100元的订单
+    # 需求2：找出金额大于100元的订单
     for order in orders:
-        if order[1]>100:
+        if order[1] > 100:
             print(f'{order[0]}------   {order[1]}   ---{order[2]}')
-    #需求3：计算已完成订单的总金额
-    num=0
+    # 需求3：计算已完成订单的总金额
+    num = 0
     for order in orders:
-        if order[2]=='已完成':
-            num+=order[1]
+        if order[2] == '已完成':
+            num += order[1]
     print(f'已完成订单总金额：{num}')
-    #按金额排序，取前3个最贵的
-    #用sorted排序，key，告诉它按照金额排序，reverse=true，表示从大到小
-    sorted_order=sorted(orders,key=lambda x:x[1],reverse=True)
-    top3=sorted_order[:3]
+    # 按金额排序，取前3个最贵的
+    # 用sorted排序，key，告诉它按照金额排序，reverse=true，表示从大到小
+    sorted_order = sorted(orders, key=lambda x: x[1], reverse=True)
+    top3 = sorted_order[:3]
     print(top3)
     print('提取前3个订单')
-    for i,order in enumerate(top3,1):
+    for i, order in enumerate(top3, 1):
         print(f'---第{i}名--{order[0]}--{order[1]}--{order[2]}')
+    # 提取所有的订单号
+    orders_number = []
+    for order in orders:
+        orders_number.append(order[0])
+    print(f'所有的订单号：{orders_number}')
+
+
+def yuangong():
+    employees = [
+        {"name": "张三", "dept": "销售部", "salary": 8000, "performance": 85, "years": 2},
+        {"name": "李四", "dept": "技术部", "salary": 12000, "performance": 92, "years": 5},
+        {"name": "王五", "dept": "销售部", "salary": 7500, "performance": 78, "years": 1},
+        {"name": "赵六", "dept": "技术部", "salary": 15000, "performance": 88, "years": 8},
+        {"name": "小明", "dept": "市场部", "salary": 9000, "performance": 95, "years": 3},
+        {"name": "小红", "dept": "销售部", "salary": 8500, "performance": 82, "years": 2},
+        {"name": "小刚", "dept": "技术部", "salary": 11000, "performance": 91, "years": 4},
+        {"name": "小丽", "dept": "市场部", "salary": 9500, "performance": 89, "years": 3},
+    ]
+    print('-' * 100)
+    print('员工表')
+    print('-' * 100)
+    # 需求1：performance大于等于90分的员工，并打印他们的姓名和绩效
+    key1 = []
+    for yuan in employees:
+        if yuan['performance'] >= 90:
+            key1.append(yuan)
+    print(key1)
+    key2=[]
+    print(f'以下是满足条件的人：')
+    for yuan1 in key1:
+        a=yuan1['name']
+        b=yuan1['performance']
+        print(f'姓名是：{a} ------ 绩效分数是：{b}')
+
+
 
 if __name__ == '__main__':
     # liebiao()
     # yuanzu()
     # renwu_liebiao()
     # liebiao_renwu1()
-    list_requiremen1()
+    # list_requiremen1()
+    yuangong()
