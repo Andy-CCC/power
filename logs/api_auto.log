@@ -255,3 +255,68 @@
 2026-03-19 09:23:12.138 | INFO     | core.excel_reader:get_cases:28 - 成功读取1条用例
 2026-03-19 09:27:31.380 | INFO     | core.excel_reader:get_cases:28 - 成功读取1条用例
 2026-03-19 09:31:16.012 | INFO     | core.excel_reader:get_cases:28 - 成功读取1条用例
+2026-07-28 15:52:38.038 | INFO     | conftest:get_global_token:14 - ======= 开始登录【https://fas-api.flextv9.com】=======
+2026-07-28 15:52:38.038 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 15:52:38.039 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 15:52:39.419 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225158,"traceID":"502d67b6d264c61892f0e63f7ecdf8dc"}
+2026-07-28 15:52:39.429 | WARNING  | conftest:get_global_token:36 - 登录重试1次失败：'data'，1秒后重试
+2026-07-28 15:52:40.429 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 15:52:40.429 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 15:52:40.654 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225159,"traceID":"cc9d5506d364c61894f0e63f89d33ba0"}
+2026-07-28 15:52:40.654 | WARNING  | conftest:get_global_token:36 - 登录重试2次失败：'data'，1秒后重试
+2026-07-28 15:52:41.660 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 15:52:41.660 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 15:52:41.873 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225161,"traceID":"9dd28c4fd364c61895f0e63f39b67c6b"}
+2026-07-28 15:52:41.873 | ERROR    | conftest:get_global_token:34 - 登录重试3次失败，终止测试：'data'
+2026-07-28 15:53:20.902 | INFO     | conftest:get_global_token:14 - ======= 开始登录【https://fas-api.flextv9.com】=======
+2026-07-28 15:53:20.903 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 15:53:20.903 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 15:53:21.839 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225200,"traceID":"e594989ddc64c6189ef0e63f9dabf4f2"}
+2026-07-28 15:53:21.849 | WARNING  | conftest:get_global_token:36 - 登录重试1次失败：'data'，1秒后重试
+2026-07-28 15:53:22.864 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 15:53:22.864 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 15:53:23.081 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225202,"traceID":"d8eeb6e7dc64c6189ff0e63f129569c6"}
+2026-07-28 15:53:23.082 | WARNING  | conftest:get_global_token:36 - 登录重试2次失败：'data'，1秒后重试
+2026-07-28 15:53:24.094 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 15:53:24.094 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 15:53:24.314 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225203,"traceID":"a7291831dd64c618a0f0e63f90d19285"}
+2026-07-28 15:53:24.314 | ERROR    | conftest:get_global_token:34 - 登录重试3次失败，终止测试：'data'
+2026-07-28 16:04:19.755 | INFO     | conftest:get_global_token:14 - ======= 开始登录【https://fas-api.flextv9.com】=======
+2026-07-28 16:04:19.755 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:04:19.756 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:04:20.827 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225859,"traceID":"029fb30c7665c61825f1e63f683304e8"}
+2026-07-28 16:04:20.838 | WARNING  | conftest:get_global_token:36 - 登录重试1次失败：'data'，1秒后重试
+2026-07-28 16:04:21.844 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:04:21.844 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:04:22.109 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225861,"traceID":"4fe90b597665c61826f1e63f4c495f0f"}
+2026-07-28 16:04:22.110 | WARNING  | conftest:get_global_token:36 - 登录重试2次失败：'data'，1秒后重试
+2026-07-28 16:04:23.118 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:04:23.118 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:04:23.385 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225862,"traceID":"1c26e3a47665c61827f1e63fa761e4f5"}
+2026-07-28 16:04:23.385 | ERROR    | conftest:get_global_token:34 - 登录重试3次失败，终止测试：'data'
+2026-07-28 16:05:17.000 | INFO     | conftest:get_global_token:14 - ======= 开始登录【https://fas-api.flextv9.com】=======
+2026-07-28 16:05:17.001 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:05:17.001 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:05:17.854 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225917,"traceID":"0adad1538365c61833f1e63fff955712"}
+2026-07-28 16:05:17.855 | WARNING  | conftest:get_global_token:36 - 登录重试1次失败：'data'，1秒后重试
+2026-07-28 16:05:18.863 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:05:18.863 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:05:19.077 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225918,"traceID":"b342b19c8365c61834f1e63f467f8a3b"}
+2026-07-28 16:05:19.077 | WARNING  | conftest:get_global_token:36 - 登录重试2次失败：'data'，1秒后重试
+2026-07-28 16:05:20.085 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:05:20.085 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:05:20.302 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785225919,"traceID":"1d45a6e58365c61835f1e63f0128cf55"}
+2026-07-28 16:05:20.302 | ERROR    | conftest:get_global_token:34 - 登录重试3次失败，终止测试：'data'
+2026-07-28 16:12:08.086 | INFO     | conftest:get_global_token:14 - ======= 开始登录【https://fas-api.flextv9.com】=======
+2026-07-28 16:12:08.088 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:12:08.088 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:12:09.440 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785226328,"traceID":"b0a01028e365c61888f1e63ff05d25bc"}
+2026-07-28 16:12:09.441 | WARNING  | conftest:get_global_token:36 - 登录重试1次失败：'data'，1秒后重试
+2026-07-28 16:12:10.456 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:12:10.456 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:12:10.675 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785226329,"traceID":"0b9cf871e365c6188af1e63fe6af2eed"}
+2026-07-28 16:12:10.676 | WARNING  | conftest:get_global_token:36 - 登录重试2次失败：'data'，1秒后重试
+2026-07-28 16:12:11.685 | INFO     | core.http_client:send_request:16 - 【请求】环境：https://fas-api.flextv9.com | 方法：POST | 路径：/admin/member/login
+2026-07-28 16:12:11.685 | INFO     | core.http_client:send_request:17 - 【请求参数】params=None | json={'username': '18218410011', 'password': '8888'}
+2026-07-28 16:12:11.911 | INFO     | core.http_client:send_request:27 - 【响应】状态码：200 | 内容：{"code":51,"message":"验证码不能为空","timestamp":1785226331,"traceID":"9d332bbbe365c6188bf1e63f7c5553a5"}
+2026-07-28 16:12:11.911 | ERROR    | conftest:get_global_token:34 - 登录重试3次失败，终止测试：'data'
