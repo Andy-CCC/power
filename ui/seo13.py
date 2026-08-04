@@ -57,7 +57,7 @@ full_case_list = [
 ]
 
 # 切换执行集：smoke_case_list / full_case_list
-run_case_list = full_case_list
+run_case_list = smoke_case_list
 
 def run_search_case(case_data):
     global total_case, pass_case, fail_case
