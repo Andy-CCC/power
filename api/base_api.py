@@ -1,137 +1,370 @@
-# api/base_api.py
-
 import time
 import requests
+import allure
+
 
 from common.config import BASE_URL
 from common.headers import get_headers
-from common.logger import logger
+
 
 
 class BaseApi:
-    """接口基类"""
+    """
+    接口请求基类
+
+
+    所有业务接口继承：
+
+    UserApi
+    VideoApi
+    PayApi
+
+
+    统一处理：
+
+    1. URL拼接
+    2. headers
+    3. GET请求
+    4. POST请求
+    5. 请求日志
+    6. 响应时间
+    7. Allure附件
+    8. 代理处理
+
+    """
+
+
 
     def __init__(self):
-        # 创建 Session，提高请求效率
+
+        """
+        初始化session
+        """
+
         self.session = requests.Session()
 
-        # 不使用系统代理（避免 ProxyError）
+
+        # =====================================
+        # 关闭系统代理
+        #
+        # 解决：
+        #
+        # requests.exceptions.ProxyError
+        #
+        # 开代理软件导致接口失败
+        #
+        # =====================================
+
         self.session.trust_env = False
 
-    def send(self, method, path, name="", **kwargs):
-        """
-        公共请求方法
 
-        :param method: 请求方式(GET/POST/PUT/DELETE)
-        :param path: 接口路径
-        :param name: 接口名称（日志展示）
-        :param kwargs:
-            params=
-            json=
-            data=
-            files=
-        :return: Response
+
+    # =====================================
+    # GET请求
+    # =====================================
+
+    def get(
+            self,
+            path,
+            params=None,
+            name=None
+    ):
         """
+        GET请求
+
+
+        示例：
+
+        self.get(
+            path="/webMoreRecommended",
+            params={
+                "page_no":1,
+                "page_size":28
+            }
+        )
+
+        """
+
+
+        return self.request(
+
+            method="GET",
+
+            path=path,
+
+            params=params,
+
+            name=name
+
+        )
+
+
+
+    # =====================================
+    # POST请求
+    # =====================================
+
+    def post(
+            self,
+            path,
+            json=None,
+            name=None
+    ):
+        """
+        POST请求
+
+
+        示例：
+
+        self.post(
+
+            path="/login",
+
+            json=data
+
+        )
+
+        """
+
+
+        return self.request(
+
+            method="POST",
+
+            path=path,
+
+            json=json,
+
+            name=name
+
+        )
+
+
+
+    # =====================================
+    # 核心请求方法
+    # =====================================
+
+    def request(
+            self,
+            method,
+            path,
+            params=None,
+            json=None,
+            name=None
+    ):
+        """
+        所有请求统一入口
+        """
+
+
+
+        # ===============================
+        # 拼接URL
+        # ===============================
 
         url = BASE_URL + path
+
+
+
+        # ===============================
+        # 获取headers
+        # ===============================
+
         headers = get_headers()
 
+
+
+        # ===============================
+        # 请求日志
+        # ===============================
+
+        print("\n" + "=" * 60)
+
+        print(
+            "接口名称:",
+            name
+        )
+
+        print(
+            "请求方式:",
+            method
+        )
+
+        print(
+            "请求URL:",
+            url
+        )
+
+        print(
+            "请求参数:",
+            params if params else json
+        )
+
+        print("=" * 60)
+
+
+
+        # ===============================
+        # 开始计时
+        # ===============================
+
+        start_time = time.time()
+
+
+
         try:
-            # ================= 请求日志 =================
-            logger.info("=" * 80)
 
-            if name:
-                logger.info(f"接口名称：{name}")
-
-            logger.info(f"请求地址：{url}")
-            logger.info(f"请求方式：{method}")
-            logger.info(f"请求请求头：{headers}")
-
-            if "params" in kwargs:
-                logger.info(f"请求参数(params)：{kwargs['params']}")
-
-            if "json" in kwargs:
-                logger.info(f"请求参数(json)：{kwargs['json']}")
-
-            if "data" in kwargs:
-                logger.info(f"请求参数(data)：{kwargs['data']}")
-
-            # 开始计时
-            start_time = time.perf_counter()
 
             response = self.session.request(
+
                 method=method,
+
                 url=url,
+
                 headers=headers,
-                timeout=10,
-                **kwargs
+
+                params=params,
+
+                json=json,
+
+                timeout=30
+
             )
 
-            # 结束计时
-            end_time = time.perf_counter()
 
-            elapsed_ms = round((end_time - start_time) * 1000, 2)
+        except requests.exceptions.ProxyError as e:
 
-            # 保存响应时间，方便测试断言
-            response.elapsed_ms = elapsed_ms
 
-            # ================= 响应日志 =================
-            logger.info(f"HTTP状态码：{response.status_code}")
-            logger.info(f"接口响应时间：{elapsed_ms} ms")
+            print(
+                "代理异常，请检查代理设置:",
+                e
+            )
 
-            try:
-                logger.info(f"响应结果：{response.json()}")
-            except Exception:
-                logger.info(f"响应结果：{response.text}")
 
-            logger.info("=" * 80)
+            raise e
 
-            return response
 
-        except requests.exceptions.Timeout:
-            logger.error("接口请求超时！")
-            raise
 
         except requests.exceptions.RequestException as e:
-            logger.error(f"接口请求异常：{e}")
-            raise
 
-    # ================= GET =================
 
-    def get(self, path, name="", **kwargs):
-        return self.send(
-            method="GET",
-            path=path,
-            name=name,
-            **kwargs
+            print(
+                "请求异常:",
+                e
+            )
+
+
+            raise e
+
+
+
+        # ===============================
+        # 结束计时
+        # ===============================
+
+        end_time = time.time()
+
+
+
+        response_time = round(
+
+            (end_time - start_time)
+            * 1000,
+
+            2
+
         )
 
-    # ================= POST =================
 
-    def post(self, path, name="", **kwargs):
-        return self.send(
-            method="POST",
-            path=path,
-            name=name,
-            **kwargs
+
+        # ===============================
+        # 响应日志
+        # ===============================
+
+        print(
+            "响应状态码:",
+            response.status_code
         )
 
-    # ================= PUT =================
 
-    def put(self, path, name="", **kwargs):
-        return self.send(
-            method="PUT",
-            path=path,
-            name=name,
-            **kwargs
+        print(
+            "响应时间:",
+            response_time,
+            "ms"
         )
 
-    # ================= DELETE =================
 
-    def delete(self, path, name="", **kwargs):
-        return self.send(
-            method="DELETE",
-            path=path,
-            name=name,
-            **kwargs
+        print(
+            "响应内容:",
+            response.text
         )
+
+
+
+        # ===============================
+        # Allure报告附件
+        # ===============================
+
+
+        allure.attach(
+
+            url,
+
+            name="请求URL",
+
+            attachment_type=allure.attachment_type.TEXT
+
+        )
+
+
+
+        allure.attach(
+
+            method,
+
+            name="请求方式",
+
+            attachment_type=allure.attachment_type.TEXT
+
+        )
+
+
+
+        allure.attach(
+
+            str(params if params else json),
+
+            name="请求参数",
+
+            attachment_type=allure.attachment_type.TEXT
+
+        )
+
+
+
+        allure.attach(
+
+            response.text,
+
+            name="响应内容",
+
+            attachment_type=allure.attachment_type.TEXT
+
+        )
+
+
+
+        allure.attach(
+
+            str(response_time) + " ms",
+
+            name="响应时间",
+
+            attachment_type=allure.attachment_type.TEXT
+
+        )
+
+
+
+        return response

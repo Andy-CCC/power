@@ -1,0 +1,23 @@
+# 用户模块测试数据
+user_info:
+
+  # 接口描述
+  name: 获取个人信息
+
+  # 期望返回code
+  expect_code: 0
+
+  # 需要校验的字段
+  check_fields:
+
+    - data
+
+banner:
+
+  name: 获取首页banner
+
+  expect_code: 0
+
+  check_fields:
+
+    - data

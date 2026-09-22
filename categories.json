@@ -1,0 +1,24 @@
+[
+    {
+        "name": "接口请求异常",
+        "matchedStatuses": [
+            "failed",
+            "broken"
+        ],
+        "messageRegex": "requests\\.exceptions\\..*"
+    },
+    {
+        "name": "接口断言失败",
+        "matchedStatuses": [
+            "failed"
+        ],
+        "traceRegex": "AssertionError"
+    },
+    {
+        "name": "代码异常",
+        "matchedStatuses": [
+            "broken"
+        ],
+        "traceRegex": "AttributeError|KeyError|TypeError"
+    }
+]
